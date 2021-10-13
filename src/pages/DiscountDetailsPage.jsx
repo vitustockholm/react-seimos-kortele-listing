@@ -27,6 +27,13 @@ const DiscountDetailsPage = () => {
               }}
             />
             <h1>{discount.title.rendered}</h1>
+            <p> Adresas: [{discount.acf.imones_adresas}]</p>
+            <p> Web url: [{discount.acf.imones_internetinis_tinklapis}]</p>
+            <p> El. pastas: [{discount.acf.imones_el_pastas}]</p>
+            <p> PVM kodas: [{discount.acf.imones_kodas}]</p>
+            <p>CopyRights: [{discount.acf.imones_pavadinimas}]</p>
+
+            <p> Telefonas: [{discount.acf.imones_telefonas}]</p>
             {/* <img
               src={discount.images[0].src}
               alt={discount.name}
@@ -36,8 +43,7 @@ const DiscountDetailsPage = () => {
             {/* <p>
               {discount.type} id: {discount.id}
             </p> */}
-            <h4>{discount.yoast_head_json.og_description}</h4>
-
+            <p>Aprasymas: [{discount.yoast_head_json.og_description}]</p>
             <button>Use discount code</button>
           </>
         )}
